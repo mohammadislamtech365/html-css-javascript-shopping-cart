@@ -34,3 +34,16 @@ function findSubTotalPrice(itemPrice,previousItemNumber,newItemNumber,id){
     return currentItemstotalPrice;
 }
 
+function findTax(id,subTotal){
+    const element = getElement(id);
+    const tax = subTotal * 0.06 ;
+    element.innerText = tax;
+    return tax;
+}
+
+function findTotal(id,tax,subTotal){
+    const element = getElement(id);
+    const total = subTotal + tax ;
+    element.innerText = total;
+    return total;
+}

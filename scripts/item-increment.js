@@ -4,7 +4,9 @@ document.getElementById("tv-plus").addEventListener('click',function(){
     const newItemNumber=changeInputItem(currentItemNumber,itemTv);
     const tvPriceElement = getElement("tv-price");
     const tvPrice = getElementValue(tvPriceElement);
-    findSubTotalPrice(tvPrice,currentItemNumber,newItemNumber,"subtotal");
+    const subTotal = findSubTotalPrice(tvPrice,currentItemNumber,newItemNumber,"subtotal");
+    const tax = findTax("tax",subTotal);
+    findTotal("total",tax,subTotal);
 });
 
 document.getElementById("tv-stand-plus").addEventListener('click',function(){
@@ -13,7 +15,7 @@ document.getElementById("tv-stand-plus").addEventListener('click',function(){
     const newItemNumber = changeInputItem(currentItemNumber,itemTvStand);
     const tvStandPriceElement = getElement("tv-stand-price");
     const tvStandPrice = getElementValue(tvStandPriceElement);
-    const subTotalElement = getElement("subtotal");
-    const subTotalPrice = getElementValue(subTotalElement);
-    findSubTotalPrice(tvStandPrice,currentItemNumber,newItemNumber,"subtotal");
+    const subTotal = findSubTotalPrice(tvStandPrice,currentItemNumber,newItemNumber,"subtotal");
+    const tax = findTax("tax",subTotal);
+    findTotal("total",tax,subTotal);
 });

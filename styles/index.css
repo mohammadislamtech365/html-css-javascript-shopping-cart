@@ -5,7 +5,7 @@ body {
 }
 
 :root {
-    --primary-bg-color:rgb(128, 128, 209);
+    --primary-bg-color:rgb(133, 121, 167);
 }
 
 /*
@@ -24,6 +24,7 @@ Header section
 .shopping-header {
     text-align: center;
     font-size: 30px;
+    color:purple;
 }
 
 /* 
@@ -34,7 +35,7 @@ Shopping-item
 .shopping-item {
     width:90%;
     margin:auto;
-    background-color: aliceblue;
+    background-color: rgb(123, 179, 210);
     margin-bottom: 20px;
     box-sizing: border-box;
 }
