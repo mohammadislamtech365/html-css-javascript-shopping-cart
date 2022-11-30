@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Alexandria&family=Roboto&display=swap');
+body {
+    margin:0px;
+    font-family: 'Alexandria', sans-serif;
+}
+
+:root {
+    --primary-bg-color:rgb(128, 128, 209);
+}
+
+/*
+-------
+Header section
+------- 
+*/
+
+.shopping {
+    width:70%;
+    margin:auto;
+    margin-top:20px;
+    background-color: var(--primary-bg-color);
+    padding:20px;
+}
+.shopping-header {
+    text-align: center;
+    font-size: 30px;
+}
+
+/* 
+------
+Shopping-item 
+------ 
+*/
+.shopping-item {
+    width:90%;
+    margin:auto;
+    background-color: aliceblue;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+}
+
+.shopping-item-image, .shopping-item-price {
+    width:45%;
+    box-sizing: border-box;
+    margin:10px;
+    display:inline-block;
+}
+.shopping-item-price {
+    position:relative;
+    top:-124px;
+    text-align:center;
+}
+.item-image {
+    max-width:100%;
+}
+
+.image-caption {
+    text-align: center;
+}
+
+.item-number {
+    width:20px;
+    text-align: center;
+}
+.shopping-total {
+    width:90%;
+    margin:auto;
+    background-color: antiquewhite;
+    box-sizing: border-box;
+    padding:20px;
+}
+
+.shopping-total-price{
+    margin:10px;
+}
+.price-label, .price-total{
+    box-sizing:border-box;
+    display:inline-block;
+    width:48%;
+}
+.price-total {
+    text-align: right;
+}
+
