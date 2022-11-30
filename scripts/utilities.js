@@ -1,19 +1,28 @@
-function getInputElement(id) {
+function getElement(id) {
     const target = document.getElementById(id);
     return target;
 }
 
-function changeItemNumber(target) {
+function getInputValue(target){
     const targetValueString = target.value;
-    const previousValue = parseInt(targetValueString);
-    const newValue = previousValue + 1;
-    return newValue;
+    const currentValue = parseInt(targetValueString);
+    return currentValue;
 }
-function getElement(id) {
-    const targetString = document.getElementById(id).innerText;
-    const targetValue = parseInt(targetString);
+function changeInputItem(previousValue,target) {
+    const newValue = previousValue + 1;
+    target.value = newValue;
+
+}
+function getValue(){
+    const targetValueString = target.innerText;
+    const targetValue = parseInt(targetValueString);
     return targetValue;
 }
+// function getElement(id) {
+//     const targetString = document.getElementById(id).innerText;
+//     const targetValue = parseInt(targetString);
+//     return targetValue;
+// }
 
 function findTotalPrice(itemNumber,price){
         

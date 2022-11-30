@@ -1,11 +1,11 @@
 document.getElementById("tv-plus").addEventListener('click',function(){
-    const targetTv = getInputElement("item-tv");
-    const newValue = changeItemNumber(targetTv);
-    targetTv.value = newValue;
+    const itemTv = getElement("item-tv");
+    const currentValue = getInputValue(itemTv);
+    changeInputItem(currentValue,itemTv);
 });
 
 document.getElementById("tv-stand-plus").addEventListener('click',function(){
-    const target = getInputElement("item-tv-stand");
-    const newValue = changeItemNumber(target);
-    target.value = newValue;
+    const itemTvStand = getElement("item-tv-stand");
+    const currentValue = getInputValue(itemTvStand);
+    changeInputItem(currentValue,itemTvStand);
 });
