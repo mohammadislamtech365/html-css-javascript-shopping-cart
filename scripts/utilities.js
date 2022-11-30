@@ -5,7 +5,13 @@ function getElement(id) {
 
 function getInputValue(target){
     const targetValueString = target.value;
-    const currentValue = parseInt(targetValueString);
+    const currentValue = parseFloat(targetValueString);
+    return currentValue;
+}
+
+function getElementValue (target){
+    const targetValueString = target.innerText;
+    const currentValue = parseFloat(targetValueString);
     return currentValue;
 }
 function changeInputItem(previousValue,target) {
@@ -18,11 +24,7 @@ function getValue(){
     const targetValue = parseInt(targetValueString);
     return targetValue;
 }
-// function getElement(id) {
-//     const targetString = document.getElementById(id).innerText;
-//     const targetValue = parseInt(targetString);
-//     return targetValue;
-// }
+
 
 function findTotalPrice(itemNumber,price){
         

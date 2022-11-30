@@ -39,16 +39,28 @@ Shopping-item
     box-sizing: border-box;
 }
 
-.shopping-item-image, .shopping-item-price {
+.shopping-item-image {
     width:45%;
     box-sizing: border-box;
     margin:10px;
     display:inline-block;
 }
-.shopping-item-price {
+.shopping-item-edit {
+    width:25%;
+    box-sizing: border-box;
+    margin:10px;
+    display:inline-block;
     position:relative;
     top:-124px;
     text-align:center;
+}
+.shopping-item-price {
+    width:20%;
+    box-sizing: border-box;
+    margin:10px;
+    display:inline-block;
+    position:relative;
+    top:-124px;
 }
 .item-image {
     max-width:100%;
