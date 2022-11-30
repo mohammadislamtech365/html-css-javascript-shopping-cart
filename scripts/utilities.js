@@ -29,7 +29,8 @@ function getValue(){
 function findSubTotalPrice(itemPrice,previousItemNumber,newItemNumber,id){
     const subTotalElement = getElement(id);
     const subTotalPrice = getElementValue(subTotalElement);
-    const currentItemstotalPrice =  (itemPrice * (newItemNumber-previousItemNumber));
-    subTotalElement.innerText = subTotalPrice + currentItemstotalPrice; 
+    const currentItemstotalPrice = subTotalPrice + (itemPrice * (newItemNumber-previousItemNumber));
+    subTotalElement.innerText =  currentItemstotalPrice; 
+    return currentItemstotalPrice;
 }
 
