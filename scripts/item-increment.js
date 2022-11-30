@@ -1,8 +1,7 @@
 document.getElementById("tv-plus").addEventListener('click',function(){
     const targetTv = getInputElement("item-tv");
     const newValue = changeItemNumber(targetTv);
-    target.value = newValue;
-    const targetSubtotal = getInput();
+    targetTv.value = newValue;
 });
 
 document.getElementById("tv-stand-plus").addEventListener('click',function(){
