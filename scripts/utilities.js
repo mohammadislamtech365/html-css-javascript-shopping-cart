@@ -17,7 +17,7 @@ function getElementValue (target){
 function changeInputItem(previousValue,target) {
     const newValue = previousValue + 1;
     target.value = newValue;
-
+    return newValue;
 }
 function getValue(){
     const targetValueString = target.innerText;
@@ -26,7 +26,10 @@ function getValue(){
 }
 
 
-function findTotalPrice(itemNumber,price){
-        
+function findSubTotalPrice(itemPrice,previousItemNumber,newItemNumber,id){
+    const subTotalElement = getElement(id);
+    const subTotalPrice = getElementValue(subTotalElement);
+    const currentItemstotalPrice =  (itemPrice * (newItemNumber-previousItemNumber));
+    subTotalElement.innerText = subTotalPrice + currentItemstotalPrice; 
 }
 

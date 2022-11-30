@@ -1,17 +1,19 @@
 document.getElementById("tv-plus").addEventListener('click',function(){
     const itemTv = getElement("item-tv");
-    const currentItem = getInputValue(itemTv);
-    changeInputItem(currentItem,itemTv);
+    const currentItemNumber = getInputValue(itemTv);
+    const newItemNumber=changeInputItem(currentItemNumber,itemTv);
     const tvPriceElement = getElement("tv-price");
     const tvPrice = getElementValue(tvPriceElement);
-    console.log(tvPrice);
+    findSubTotalPrice(tvPrice,currentItemNumber,newItemNumber,"subtotal");
 });
 
 document.getElementById("tv-stand-plus").addEventListener('click',function(){
     const itemTvStand = getElement("item-tv-stand");
-    const currentValue = getInputValue(itemTvStand);
-    changeInputItem(currentValue,itemTvStand);
+    const currentItemNumber = getInputValue(itemTvStand);
+    const newItemNumber = changeInputItem(currentItemNumber,itemTvStand);
     const tvStandPriceElement = getElement("tv-stand-price");
     const tvStandPrice = getElementValue(tvStandPriceElement);
-    console.log(tvStandPrice);
+    const subTotalElement = getElement("subtotal");
+    const subTotalPrice = getElementValue(subTotalElement);
+    findSubTotalPrice(tvStandPrice,currentItemNumber,newItemNumber,"subtotal");
 });
