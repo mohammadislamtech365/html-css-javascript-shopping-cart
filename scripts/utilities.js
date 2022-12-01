@@ -14,10 +14,17 @@ function getElementValue (target){
     const currentValue = parseFloat(targetValueString);
     return currentValue;
 }
-function changeInputItem(previousValue,target) {
-    const newValue = previousValue + 1;
+function changeInputItem(previousValue,target,isAddition) {
+    if(isAddition){
+        const newValue = previousValue + 1;
+        target.value = newValue;
+        return newValue;
+    }
+    const newValue = previousValue - 1;
     target.value = newValue;
     return newValue;
+
+    
 }
 function getValue(){
     const targetValueString = target.innerText;
